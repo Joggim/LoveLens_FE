@@ -1,14 +1,16 @@
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import FaceVerificationPage from './pages/FaceVerification/FaceVerification';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <span>테스트</span>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/verification" element={<FaceVerificationPage />} />;
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
