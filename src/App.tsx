@@ -1,18 +1,13 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import CameraPage from './pages/Camera/Camera';
-import ProfileSetupPage from './pages/ProfileSetup/ProfileSetup';
+import HomePage from './pages/Home/Home';
 
 // 라우터 설정
 const router = createBrowserRouter([
   {
-    path: '/camera',
-    element: <CameraPage />,
-  },
-  {
-    path: '/profile-setup',
-    element: <ProfileSetupPage />,
+    path: '/',
+    element: <HomePage />,
   },
 ]);
 
