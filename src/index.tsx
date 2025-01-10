@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 import theme from './styles/theme';
 
-import '@styles/fonts/font.css';
+import './styles/fonts/font.css';
 
 import App from './App';
 
