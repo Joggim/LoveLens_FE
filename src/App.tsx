@@ -1,14 +1,18 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import HomePage from './pages/Home/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <span>테스트</span>
-      </header>
-    </div>
-  );
-}
+// 라우터 설정
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomePage />,
+  },
+]);
+
+const App: React.FC = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;
