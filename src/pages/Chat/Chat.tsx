@@ -1,14 +1,14 @@
 import React from 'react';
-import { Container } from './Home.styles';
+import { Container } from './Chat.styles';
 import NavBar from '../../components/NavBar/NavBar';
 
-const HomePage: React.FC = () => {
+const ChatPage: React.FC = () => {
   return (
     <Container>
-      <h1>Home</h1>
+      <h1>Chat</h1>
       <NavBar />
     </Container>
   );
 };
 
-export default HomePage;
+export default ChatPage;

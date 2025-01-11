@@ -1,14 +1,14 @@
 import React from 'react';
-import { Container } from './Home.styles';
+import { Container } from './MyPage.styles';
 import NavBar from '../../components/NavBar/NavBar';
 
-const HomePage: React.FC = () => {
+const MyPage: React.FC = () => {
   return (
     <Container>
-      <h1>Home</h1>
+      <h1>MyPage</h1>
       <NavBar />
     </Container>
   );
 };
 
-export default HomePage;
+export default MyPage;
