@@ -31,6 +31,7 @@ const theme: DefaultTheme = {
       tertiary: '#7B7B7B', // Gray-600
       caption: '#9E9E9E', // Gray-500
       contrast: '#FFFFFF', // White
+      white: '#FFFFFF', // White
     },
 
     background: {
