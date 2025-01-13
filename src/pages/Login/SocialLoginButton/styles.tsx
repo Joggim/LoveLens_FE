@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import theme from '../../../styles/theme';
 
 interface LogInButtonProps {
-  $backgroundColor: string;
+  $bgColor: string;
   $textColor?: string;
 }
 
@@ -15,7 +15,7 @@ export const ButtonContainer = styled.button<LogInButtonProps>`
   border-radius: 8px;
   width: 100%;
   padding: 0 30px;
-  background-color: ${({ $backgroundColor }) => $backgroundColor};
+  background-color: ${({ $bgColor }) => $bgColor};
   color: ${({ $textColor, theme }) => $textColor || theme.colors.text.primary};
 
   span {

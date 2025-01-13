@@ -12,10 +12,10 @@ const LoginPage: React.FC = () => {
         <SocialLoginButton
           logo={Google}
           name="Google"
-          color="#474747"
+          bgColor="#474747"
           textColor={theme.colors.text.white}
         />
-        <SocialLoginButton logo={Kakao} name="Kakao" color="#FEE500" />
+        <SocialLoginButton logo={Kakao} name="Kakao" bgColor="#FEE500" />
       </ButtonList>
     </Container>
   );

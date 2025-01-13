@@ -1,6 +1,6 @@
 export interface SocialLoginButtonProps {
   logo: string;
   name: string;
-  color: string;
+  bgColor: string;
   textColor?: string;
 }
