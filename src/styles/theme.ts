@@ -4,8 +4,8 @@ const theme: DefaultTheme = {
   colors: {
     // Brand Colors
     brand: {
-      primary: '#C59CE3',
-      secondary: '#6C57E2',
+      primary: '#6C57E2',
+      secondary: '#C59CE3',
     },
 
     gray: {
@@ -31,7 +31,6 @@ const theme: DefaultTheme = {
       tertiary: '#7B7B7B', // Gray-600
       caption: '#9E9E9E', // Gray-500
       contrast: '#FFFFFF', // White
-      white: '#FFFFFF', // White
     },
 
     background: {
