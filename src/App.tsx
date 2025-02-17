@@ -3,9 +3,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/Home/Home';
 import LikePage from './pages/Like/Like';
-import ChatPage from './pages/Chat/Chat';
+import TalkPage from './pages/Talk/Talk';
 import MyPage from './pages/MyPage/MyPage';
 import LoginPage from './pages/Login/Login';
+import SentenceListPage from './pages/SentenceList';
+import CustomSentencePage from './pages/CustomSentence';
+import SpeakPage from './pages/Speak';
 
 // 라우터 설정
 const router = createBrowserRouter([
@@ -14,20 +17,32 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
+    path: '/login',
+    element: <LoginPage />,
+  },
+  {
     path: '/like',
     element: <LikePage />,
   },
   {
-    path: '/chat',
-    element: <ChatPage />,
+    path: '/talk',
+    element: <TalkPage />,
   },
   {
     path: '/my-page',
     element: <MyPage />,
   },
   {
-    path: '/login',
-    element: <LoginPage />,
+    path: '/sentence-list',
+    element: <SentenceListPage />,
+  },
+  {
+    path: '/custom-sentence',
+    element: <CustomSentencePage />,
+  },
+  {
+    path: '/speak',
+    element: <SpeakPage />,
   },
 ]);
 
