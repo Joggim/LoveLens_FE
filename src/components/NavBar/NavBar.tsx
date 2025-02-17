@@ -26,6 +26,18 @@ const NavBar: React.FC = () => {
 
   const tabs = [
     {
+      name: 'Talk',
+      Icon: (isSelected: boolean) => (
+        <Chat
+          isFilled={isSelected}
+          color={
+            isSelected ? theme.colors.brand.primary : theme.colors.gray[500]
+          }
+        />
+      ),
+      route: '/talk',
+    },
+    {
       name: 'Home',
       Icon: (isSelected: boolean) => (
         <Home
@@ -37,31 +49,6 @@ const NavBar: React.FC = () => {
       ),
       route: '/',
     },
-    {
-      name: 'Like',
-      Icon: (isSelected: boolean) => (
-        <Like
-          isFilled={isSelected}
-          color={
-            isSelected ? theme.colors.brand.primary : theme.colors.gray[500]
-          }
-        />
-      ),
-      route: '/like',
-    },
-    {
-      name: 'Chat',
-      Icon: (isSelected: boolean) => (
-        <Chat
-          isFilled={isSelected}
-          color={
-            isSelected ? theme.colors.brand.primary : theme.colors.gray[500]
-          }
-        />
-      ),
-      route: '/chat',
-    },
-
     {
       name: 'MyPage',
       Icon: (isSelected: boolean) => (

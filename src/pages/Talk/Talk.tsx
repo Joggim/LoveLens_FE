@@ -1,14 +1,14 @@
 import React from 'react';
-import { Container } from './Chat.styles';
+import { Container } from './Talk.styles';
 import NavBar from '../../components/NavBar/NavBar';
 
-const ChatPage: React.FC = () => {
+const TalkPage: React.FC = () => {
   return (
     <Container>
-      <h1>Chat</h1>
+      <h1>Talk</h1>
       <NavBar />
     </Container>
   );
 };
 
-export default ChatPage;
+export default TalkPage;
