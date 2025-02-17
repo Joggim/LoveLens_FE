@@ -3,4 +3,5 @@ export interface MenuItemProps {
   fontColor: string;
   title: string;
   content: string;
+  route: string;
 }

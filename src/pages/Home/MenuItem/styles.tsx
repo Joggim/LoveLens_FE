@@ -13,6 +13,7 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 16px;
   background-color: ${({ color, theme }) =>
     color || theme.colors.brand.primary};
+  cursor: pointer;
 `;
 
 export const Left = styled.div`

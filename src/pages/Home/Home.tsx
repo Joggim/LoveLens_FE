@@ -14,12 +14,14 @@ const HomePage: React.FC = () => {
           fontColor={theme.colors.text.white}
           title="내 문장으로 연습하기"
           content="내가 훈련하고 싶은 문장으로 읽기"
+          route="/custom-sentence"
         />
         <MenuItem
           bgColor={theme.colors.brand.secondary}
           fontColor={theme.colors.text.white}
           title="문장 읽기"
           content="정해진 문장을 읽으며 발음 연습하기"
+          route="/sentence-list"
         />
       </MenuContainer>
       <NavBar />

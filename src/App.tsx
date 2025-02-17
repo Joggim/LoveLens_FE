@@ -6,6 +6,8 @@ import LikePage from './pages/Like/Like';
 import TalkPage from './pages/Talk/Talk';
 import MyPage from './pages/MyPage/MyPage';
 import LoginPage from './pages/Login/Login';
+import SentenceListPage from './pages/SentenceList';
+import CustomSentencePage from './pages/CustomSentence';
 
 // 라우터 설정
 const router = createBrowserRouter([
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
   {
     path: '/my-page',
     element: <MyPage />,
+  },
+  {
+    path: '/sentence-list',
+    element: <SentenceListPage />,
+  },
+  {
+    path: '/custom-sentence',
+    element: <CustomSentencePage />,
   },
 ]);
 
