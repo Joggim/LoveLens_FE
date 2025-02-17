@@ -1,11 +1,23 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, SentenceList } from './styles';
 import NavBar from '../../components/NavBar/NavBar';
+import TopBar from '../../components/TopBar';
+import SentenceItem from './SentenceItem';
+import { dummySentences } from './dummySentences';
 
 const SentenceListPage: React.FC = () => {
   return (
     <Container>
-      <h1>Sentence List</h1>
+      <TopBar name="문장 읽기" />
+      <SentenceList>
+        {dummySentences.map((sentence, index) => (
+          <SentenceItem
+            key={index}
+            korean={sentence.korean}
+            translation={sentence.translation}
+          />
+        ))}
+      </SentenceList>
       <NavBar />
     </Container>
   );

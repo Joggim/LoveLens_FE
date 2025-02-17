@@ -4,12 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import theme from '../../styles/theme';
 
 import { StyledText } from '../StyledText/StyledText.styles';
+import { TopBarContainer, Icon } from './styles';
 
-import { NavBarContainer, NavBarWrapper, Icon } from './TopBar.styles';
+import ArrowLeft from '../Icons/ArrowLeft';
 
 import { TopBarProps } from './dto';
 
-const TopBar: React.FC<TopBarProps> = ({ tab }) => {
+const TopBar: React.FC<TopBarProps> = ({ name }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -17,12 +18,12 @@ const TopBar: React.FC<TopBarProps> = ({ tab }) => {
   };
 
   return (
-    <NavBarContainer>
-      <NavBarWrapper>
-        <Icon onClick={handleClick}>{}</Icon>
-        <StyledText $variant="captionMedium">{tab.name}</StyledText>
-      </NavBarWrapper>
-    </NavBarContainer>
+    <TopBarContainer>
+      <Icon onClick={handleClick}>
+        <ArrowLeft color="black" />
+      </Icon>
+      <StyledText $variant="headingL">{name}</StyledText>
+    </TopBarContainer>
   );
 };
 
