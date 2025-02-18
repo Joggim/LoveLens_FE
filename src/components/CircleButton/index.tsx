@@ -5,15 +5,12 @@ import { CircleButtonProps } from './dto';
 const CircleButton: React.FC<CircleButtonProps> = ({
   size,
   bgColor,
-  color,
   icon,
   onClick,
 }) => {
   return (
     <Container size={size} bgColor={bgColor} onClick={onClick}>
-      <IconWrapper size={size} color={color}>
-        {icon}
-      </IconWrapper>
+      <IconWrapper size={size}>{icon}</IconWrapper>
     </Container>
   );
 };

@@ -15,11 +15,10 @@ export const Container = styled.button<{
   cursor: pointer;
 `;
 
-export const IconWrapper = styled.div<{ size: 'big' | 'small'; color: string }>`
+export const IconWrapper = styled.div<{ size: 'big' | 'small' }>`
   width: ${({ size }) => (size === 'big' ? '30px' : '24px')};
   height: ${({ size }) => (size === 'big' ? '30px' : '24px')};
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${({ color }) => color};
 `;
